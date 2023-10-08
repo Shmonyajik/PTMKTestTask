@@ -1,0 +1,23 @@
+2023-10-09 01:20:55.626 +03:00 [INF] Executed DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Birthday], [e].[FullName], [e].[Sex]
+FROM [Employees] AS [e]
+WHERE [e].[FullName] LIKE N'F%'
+2023-10-09 01:21:01.762 +03:00 [INF] 09.10.2023 1:21:01 Время выполнения: 2559 мс
+2023-10-09 01:23:27.840 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Birthday], [e].[FullName], [e].[Sex]
+FROM [Employees] AS [e]
+WHERE [e].[FullName] LIKE N'F%'
+2023-10-09 01:23:33.606 +03:00 [INF] 09.10.2023 1:23:33 Время выполнения: 2350 мс
+2023-10-09 01:24:08.733 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Birthday], [e].[FullName], [e].[Sex]
+FROM [Employees] AS [e]
+WHERE [e].[FullName] LIKE N'F%'
+2023-10-09 01:24:14.373 +03:00 [INF] 09.10.2023 1:24:14 Время выполнения: 2311 мс
+2023-10-09 02:04:30.567 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Birthday], [e].[FullName], [e].[Sex]
+FROM [Employees] AS [e]
+WHERE [e].[FullName] LIKE N'F%'
+2023-10-09 02:04:44.733 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Birthday], [e].[FullName], [e].[Sex]
+FROM [Employees] AS [e]
+WHERE [e].[FullName] LIKE N'F%'

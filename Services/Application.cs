@@ -106,7 +106,9 @@ namespace PTMKTestTask.Services
                             {
                                 randomEmployees[i] = new Employee("Familiya Name Otchestvo ", "2000-05-10", "male");
                             }
+
                             _employeeRepository.CreateMultiple(randomEmployees);
+
                             _dynamicTableCreationService.CreateIndex();
                             
                                 break;
@@ -114,7 +116,9 @@ namespace PTMKTestTask.Services
                             var sw = new Stopwatch();
 
                             sw.Start();
-                            var employees = _employeeRepository.GetAll().Where(e => EF.Functions.Like(e.FullName, "F%")).ToList();
+                            var employees = _employeeRepository.GetAll()
+                                .Where(e => EF.Functions.Like(e.FullName, "F%"))
+                                .ToList();
                             sw.Stop();
 
                             if (employees.Count==0)

@@ -13,7 +13,6 @@
           "Microsoft.Extensions.Hosting": "7.0.1",
           "Serilog.Extensions.Hosting": "7.0.0",
           "Serilog.Extensions.Logging": "7.0.0",
-          "Serilog.Settings.Configuration": "7.0.1",
           "Serilog.Sinks.File": "5.0.0"
         },
         "runtime": {
@@ -314,18 +313,6 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
         "runtime": {
           "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyModel/7.0.0": {
-        "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0",
-          "System.Text.Json": "7.0.0"
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
@@ -696,19 +683,6 @@
           }
         }
       },
-      "Serilog.Settings.Configuration/7.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Binder": "7.0.3",
-          "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "Serilog": "2.12.0"
-        },
-        "runtime": {
-          "lib/net7.0/Serilog.Settings.Configuration.dll": {
-            "assemblyVersion": "7.0.1.0",
-            "fileVersion": "7.0.1.0"
-          }
-        }
-      },
       "Serilog.Sinks.File/5.0.0": {
         "dependencies": {
           "Serilog": "2.12.0"
@@ -1075,13 +1049,6 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyModel/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-oONNYd71J3LzkWc4fUHl3SvMfiQMYUCo/mDHDEu76hYYxdhdrPYv6fvGv9nnKVyhE9P0h20AU8RZB5OOWQcAXg==",
-      "path": "microsoft.extensions.dependencymodel/7.0.0",
-      "hashPath": "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512"
-    },
     "Microsoft.Extensions.FileProviders.Abstractions/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1291,13 +1258,6 @@
       "sha512": "sha512-9faU0zNQqU7I6soVhLUMYaGNpgWv6cKlKb2S5AnS8gXxzW/em5Ladm/6FMrWTnX41cdbdGPOWNAo6adi4WaJ6A==",
       "path": "serilog.extensions.logging/7.0.0",
       "hashPath": "serilog.extensions.logging.7.0.0.nupkg.sha512"
-    },
-    "Serilog.Settings.Configuration/7.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FpUWtc0YUQvCfrKRI73KbmpWK3RvWTQr9gMDfTPEtmVI6f7KkY8Egj6r1BQA1/4oyTjxRbTn5yKX+2+zaWTwrg==",
-      "path": "serilog.settings.configuration/7.0.1",
-      "hashPath": "serilog.settings.configuration.7.0.1.nupkg.sha512"
     },
     "Serilog.Sinks.File/5.0.0": {
       "type": "package",

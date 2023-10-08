@@ -1,15 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Intrinsics.X86;
 
 namespace PTMKTestTask.Services
 {
-    
+
     public class DynamicTableCreationService: IDynamicTableCreationService
     {
         
@@ -27,9 +20,6 @@ namespace PTMKTestTask.Services
                 _context.Database.EnsureDeleted();
                 _context.Database.EnsureCreated();
 
-               
-
-
                 Console.WriteLine($"Таблица  успешно создана!");
             }
             catch (Exception ex)//Microsoft.Data.SqlClient.SqlException: 
@@ -37,8 +27,7 @@ namespace PTMKTestTask.Services
 
                 Console.WriteLine($"не удалось создать таблицу! {ex.Message}");
             }
-                
-            
+                 
         }
 
         public void CreateIndex()

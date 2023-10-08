@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTMKTestTask", "PTMKTestTask.csproj", "{967F9555-A65C-4C6E-8A3B-8E80567CA7FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PTMKTestTask", "PTMKTestTask.csproj", "{967F9555-A65C-4C6E-8A3B-8E80567CA7FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{42E0B177-28FA-4906-A243-9A075E7869C4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore.txt = .gitignore.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

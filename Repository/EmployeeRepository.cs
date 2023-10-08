@@ -32,8 +32,5 @@ namespace PTMKTestTask.Repository
             return _context.Employees;
         }
 
-
-
-
     }
 }

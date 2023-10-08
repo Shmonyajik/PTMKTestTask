@@ -7,7 +7,7 @@ using PTMKTestTask.Entities;
 using PTMKTestTask.Repository;
 using PTMKTestTask.Services;
 using Serilog;
-using Serilog.Extensions.Hosting;
+
 
 namespace PTMKTestTask
 {
@@ -28,10 +28,11 @@ namespace PTMKTestTask
             var host = Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
                 {
-                services.AddDbContext<AppDbContext>((options) => options.UseSqlServer(@"Server=DESKTOP-7PL9DAP;Database=PTMKTestTaskDB;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"));
-                    services.AddScoped<IDynamicTableCreationService, DynamicTableCreationService>();
-                    services.AddScoped<IBaseRepository<Employee>, EmployeeRepository>();
-                    services.AddScoped<Application>();
+                    
+                services.AddDbContext<AppDbContext>((options) => options.UseSqlServer(context.Configuration.GetConnectionString("DefaultConnection")));
+                    services.AddSingleton<IDynamicTableCreationService, DynamicTableCreationService>();
+                    services.AddSingleton<IBaseRepository<Employee>, EmployeeRepository>();
+                    services.AddSingleton<Application>();
 
                 })
                 .UseSerilog()
